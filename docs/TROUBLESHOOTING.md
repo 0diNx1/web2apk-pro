@@ -49,6 +49,6 @@ Always start with `web2apk doctor`. Build logs: `<project>/.web2apk/logs/build-*
 | Page looks like a desktop site | add the viewport meta tag |
 | CDN scripts/fonts don't load | `internet_access` is false by default; enable it, or vendor the files into the project |
 | `http://` resources blocked | use https, or `allow_cleartext` (requires `internet_access`) |
-| `fetch()`/ES modules from local files fail | files are served over https://appassets.androidplatform.net, so module imports and fetch of relative files work; `file://` assumptions don't |
+| `fetch()`/ES modules from local files fail |so module imports and fetch of relative files work; `file://` assumptions don't |
 | Link opens in the browser | host not in `allowed_origins` (by design) |
 | Bridge object missing | `js_bridge: true`; only pages from the app's own origin get it |
