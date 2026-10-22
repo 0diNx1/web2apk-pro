@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web2apk-pro"
+version = "1.0.0"
+description = "Package a pure HTML/CSS/JS project as an Android WebView APK (Kali Linux CLI)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+icons = ["Pillow>=9"]
+test = ["pytest>=7"]
+
+[project.scripts]
+web2apk = "web2apk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+web2apk = ["templates/**/*", "templates/**/.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

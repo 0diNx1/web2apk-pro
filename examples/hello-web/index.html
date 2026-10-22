@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Hello Web</h1></header>
+  <main>
+    <p>This page runs from the APK's assets; no server involved.</p>
+    <button id="counter">Count: 0</button>
+    <p><a href="about.html">About (second page, back button works)</a></p>
+    <label class="file">Pick a file <input type="file" id="file"></label>
+    <p id="fileinfo"></p>
+    <section>
+      <h2>Native bridge</h2>
+      <button id="toast">Show Android toast</button>
+      <pre id="bridge">bridge: checking...</pre>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+recursive-include src/web2apk/templates *
+include README.md LICENSE

@@ -1,0 +1,18 @@
+{
+  "app_name": "Hello Web",
+  "package_id": "com.example.helloweb",
+  "version_name": "1.0.0",
+  "version_code": 1,
+  "entry_point": "index.html",
+  "min_sdk": 23,
+  "target_sdk": 35,
+  "orientation": "auto",
+  "internet_access": false,
+  "fullscreen": false,
+  "allow_file_uploads": true,
+  "allow_downloads": false,
+  "js_bridge": true,
+  "debug_webview": false,
+  "status_bar_color": "#2563eb",
+  "splash_color": "#2563eb"
+}

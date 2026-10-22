@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Run Web2APK Pro straight from a source checkout (no installation needed).
+set -euo pipefail
+here="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+export PYTHONPATH="$here/src${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m web2apk "$@"

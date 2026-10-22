@@ -1,0 +1,11 @@
+:root { color-scheme: light dark; --accent: #2563eb; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.5; }
+header { background: var(--accent); color: #fff; padding: 1rem; }
+header h1 { margin: 0; font-size: 1.3rem; }
+main { padding: 1rem; max-width: 40rem; margin: 0 auto; }
+button, .file { display: inline-block; padding: .6rem 1rem; border: 0; border-radius: .5rem;
+  background: var(--accent); color: #fff; font-size: 1rem; }
+.file input { display: none; }
+pre { white-space: pre-wrap; background: rgba(127,127,127,.15); padding: .6rem; border-radius: .4rem; }
+@media (min-width: 700px) { main { padding: 2rem; } }
